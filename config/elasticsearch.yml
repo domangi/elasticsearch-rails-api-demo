@@ -1,0 +1,14 @@
+development: &default
+  es_bin: '../others/elasticsearch-5.5.3/bin/elasticsearch'
+  host: 'http://localhost:9400'
+  port: '9400'
+test:
+  es_bin: '../others/elasticsearch-5.5.3/bin/elasticsearch'
+  host: 'http://localhost:9250'
+  port: '9250'
+staging:
+  <<: *default
+production:
+  es_bin: '../others/elasticsearch-5.5.3/bin/elasticsearch'
+  host: 'http://localhost:9600'
+  port: '9600'
